@@ -35,7 +35,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
  * Display a ripple on click
  * @styleguide 	Effects / Ripple
  * @example 	html
- * <s-ripple></s-ripple>
+ * <div style="height:500px; position:relative;">
+ * 	<s-ripple></s-ripple>
+ * 	<div style="position:absolute; top:50%; left:50%; transform:translateX(-50%) translateY(-50%)">
+ * 	 Click to see the ripple effect in action
+ * 	</div>
+ * </div>
  */
 
 var SRippleComponent = function (_SWebComponent) {
