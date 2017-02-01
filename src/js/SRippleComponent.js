@@ -6,7 +6,7 @@ import __offset from 'coffeekraken-sugar/js/dom/offset'
 /**
  * @name 	Ripple
  * Display a ripple on click
- * @styleguide 	Effects / Ripple
+ * @styleguide 	Objects / Ripple
  * @example 	html
  * <div style="height:500px; position:relative;">
  * 	<s-ripple></s-ripple>

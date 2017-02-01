@@ -33,7 +33,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /**
  * @name 	Ripple
  * Display a ripple on click
- * @styleguide 	Effects / Ripple
+ * @styleguide 	Objects / Ripple
  * @example 	html
  * <div style="height:500px; position:relative;">
  * 	<s-ripple></s-ripple>
