@@ -3,18 +3,6 @@ import SParticlesSystemComponent from 'coffeekraken-s-particles-system-component
 import __style from 'coffeekraken-sugar/js/dom/style'
 import __offset from 'coffeekraken-sugar/js/dom/offset'
 
-/**
- * @name 	Ripple
- * Display a ripple on click
- * @styleguide 	Objects / Ripple
- * @example 	html
- * <div style="height:500px; position:relative;">
- * 	<s-ripple></s-ripple>
- * 	<div style="position:absolute; top:50%; left:50%; transform:translateX(-50%) translateY(-50%)">
- * 	 Click to see the ripple effect in action
- * 	</div>
- * </div>
- */
 
 export default class SRippleComponent extends SWebComponent {
 

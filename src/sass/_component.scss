@@ -20,6 +20,18 @@
 @mixin s-ripple-style(
 ) {
 	@include s-component('s-ripple') {
+		/**
+		 * @name 	Ripple
+		 * Display a ripple on click
+		 * @styleguide 	Objects / Ripple
+		 * @example 	html
+		 * <div style="height:500px; position:relative;">
+		 * 	<#{s-component()}></#{s-component()}>
+		 * 	<div style="position:absolute; top:50%; left:50%; transform:translateX(-50%) translateY(-50%)">
+		 * 	 Click to see the ripple effect in action
+		 * 	</div>
+		 * </div>
+		 */
 		background:rgba(0,0,0,.3);
 		@include s-animation(s-ripple .3s ease-out);
 	}
