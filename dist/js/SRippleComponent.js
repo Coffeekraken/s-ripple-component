@@ -30,19 +30,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-/**
- * @name 	Ripple
- * Display a ripple on click
- * @styleguide 	Objects / Ripple
- * @example 	html
- * <div style="height:500px; position:relative;">
- * 	<s-ripple></s-ripple>
- * 	<div style="position:absolute; top:50%; left:50%; transform:translateX(-50%) translateY(-50%)">
- * 	 Click to see the ripple effect in action
- * 	</div>
- * </div>
- */
-
 var SRippleComponent = function (_SWebComponent) {
 	_inherits(SRippleComponent, _SWebComponent);
 
