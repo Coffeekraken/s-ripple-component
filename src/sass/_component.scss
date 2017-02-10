@@ -21,9 +21,9 @@
 ) {
 	@include s-component('s-ripple') {
 		/**
-		 * @name 	Ripple
+		 * @name 	Default ripple
 		 * Display a ripple on click
-		 * @styleguide 	Objects / Ripple
+		 * @styleguide 	Objects / Ripples
 		 * @example 	html
 		 * <div style="height:500px; position:relative;">
 		 * 	<#{s-component()}></#{s-component()}>
