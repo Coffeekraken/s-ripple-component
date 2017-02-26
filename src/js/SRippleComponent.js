@@ -52,7 +52,7 @@ export default class SRippleComponent extends SWebComponent {
 	/**
 	 * Css
 	 */
-	static css(componentName, componentNameDash) {
+	static defaultCss(componentName, componentNameDash) {
 		return `
 			${componentNameDash} {
 				pointer-events : none;

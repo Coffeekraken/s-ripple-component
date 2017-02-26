@@ -184,13 +184,13 @@ var SRippleComponent = function (_SWebComponent) {
 			return false;
 		}
 	}], [{
-		key: 'css',
+		key: 'defaultCss',
 
 
 		/**
    * Css
    */
-		value: function css(componentName, componentNameDash) {
+		value: function defaultCss(componentName, componentNameDash) {
 			return '\n\t\t\t' + componentNameDash + ' {\n\t\t\t\tpointer-events : none;\n\t\t\t\tposition : absolute;\n\t\t\t\ttop : 0;\n\t\t\t\tleft : 0;\n\t\t\t\twidth : 100%;\n\t\t\t\theight : 100%;\n\t\t\t}\n\t\t\t.' + componentNameDash + '__particle {\n\t\t\t\ttop:50%; left:50%;\n\t\t\t\t-webkit-transform: translateX(-50%) translateY(-50%);\n\t\t\t\ttransform: translateX(-50%) translateY(-50%);\n\t\t\t\tposition:absolute;\n\t\t\t\twidth:150%;\n\t\t\t\tborder-radius: 50%;\n\t\t\t}\n\t\t\t.' + componentNameDash + '__particle:after {\n\t\t\t\tcontent:"";\n\t\t\t\tdisplay:block;\n\t\t\t\twidth:100%;\n\t\t\t\theight:0;\n\t\t\t\tpadding-top:100%;\n\t\t\t}\n\t\t';
 		}
 	}, {
