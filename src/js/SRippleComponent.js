@@ -3,12 +3,29 @@ import SParticlesSystemComponent from 'coffeekraken-s-particles-system-component
 import __style from 'coffeekraken-sugar/js/dom/style'
 import __offset from 'coffeekraken-sugar/js/dom/offset'
 
+/**
+ * @name 		SRippleComponent
+ * @extends 	SWebComponent
+ * Provide a nice and simple to use ripple webcomponent fully customizable
+ *
+ * @styleguide 		Objects / Ripples
+ * @example 		html
+ * <div style="height:500px; position:relative;">
+ * 	<s-ripple></s-ripple>
+ * 	<div style="position:absolute; top:50%; left:50%; transform:translateX(-50%) translateY(-50%)">
+ * 	 Click to see the ripple effect in action
+ * 	</div>
+ * </div>
+ *
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
+ */
 
 export default class SRippleComponent extends SWebComponent {
 
 	/**
 	 * Default props
 	 * @definition 		SWebComponent.defaultProps
+	 * @protected
 	 */
 	static get defaultProps() {
 		return {
@@ -51,6 +68,7 @@ export default class SRippleComponent extends SWebComponent {
 
 	/**
 	 * Css
+	 * @protected
 	 */
 	static defaultCss(componentName, componentNameDash) {
 		return `
@@ -83,6 +101,7 @@ export default class SRippleComponent extends SWebComponent {
 	/**
 	 * Component will mount
 	 * @definition 		SWebComponent.componentWillMount
+	 * @protected
 	 */
 	componentWillMount() {
 		super.componentWillMount();
@@ -92,6 +111,7 @@ export default class SRippleComponent extends SWebComponent {
 	/**
 	 * Mount component
 	 * @definition 		SWebComponent.componentMount
+	 * @protected
 	 */
 	componentMount() {
 		super.componentMount();
@@ -105,6 +125,7 @@ export default class SRippleComponent extends SWebComponent {
 	/**
 	 * Component unmount
 	 * @definition 		SWebComponent.componentUnmount
+	 * @protected
 	 */
 	componentUnmount() {
 		super.componentUnmount();
@@ -195,6 +216,7 @@ export default class SRippleComponent extends SWebComponent {
 
 	/**
 	 * Should component update
+	 * @protected
 	 */
 	shouldComponentUpdate(nextProps) {
 		return false;

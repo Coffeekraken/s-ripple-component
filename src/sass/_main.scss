@@ -1,3 +1,11 @@
+/**
+ * @name 	s-ripple
+ * This file provide all the mixins to style component
+ */
+
+/**
+ * Print out the bare and style component css
+ */
 @mixin s-ripple() {
 	@include s-ripple-bare();
 	@include s-ripple-style();
@@ -12,11 +20,19 @@
 		transform:translateX(-50%) translateY(-50%) scale(1,1);
 	}
 }
+
+/**
+ * Print out the bare component css
+ */
 @mixin s-ripple-bare() {
 	@include s-component('s-ripple') {
 
 	}
 }
+
+/**
+ * Print out the style component css
+ */
 @mixin s-ripple-style(
 ) {
 	@include s-component('s-ripple') {
@@ -34,22 +50,5 @@
 		 */
 		background:rgba(0,0,0,.3);
 		@include s-animation(s-ripple .3s ease-out);
-	}
-}
-
-@mixin s-ripple-classes() {
-	@include s-ripple-classes-bare();
-	@include s-ripple-classes-style();
-}
-
-@mixin s-ripple-classes-bare() {
-	@include s-component('s-ripple') {
-	}
-}
-@mixin s-ripple-classes-style() {
-	@include s-component('s-ripple') {
-		.#{s-component()}__particle {
-			@include s-ripple-style();
-		}
 	}
 }

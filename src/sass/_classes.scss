@@ -1,0 +1,31 @@
+/**
+ * @name 	s-ripple
+ * This file provide all the mixins to generate component classes
+ */
+
+/**
+ * Print out the bare and style component css
+ */
+@mixin s-ripple-classes() {
+	@include s-ripple-classes-bare();
+	@include s-ripple-classes-style();
+}
+
+/**
+ * Print out the bare component css
+ */
+@mixin s-ripple-classes-bare() {
+	@include s-component('s-ripple') {
+	}
+}
+
+/**
+ * Print out the style component css
+ */
+@mixin s-ripple-classes-style() {
+	@include s-component('s-ripple') {
+		.#{s-component()}__particle {
+			@include s-ripple-style();
+		}
+	}
+}
