@@ -30,6 +30,22 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+/**
+ * @name 		SRippleComponent
+ * @extends 	SWebComponent
+ * Provide a nice and simple to use ripple webcomponent fully customizable
+ *
+ * @example 		html
+ * <div style="height:500px; position:relative;">
+ * 	<s-ripple></s-ripple>
+ * 	<div style="position:absolute; top:50%; left:50%; transform:translateX(-50%) translateY(-50%)">
+ * 	 Click to see the ripple effect in action
+ * 	</div>
+ * </div>
+ *
+ * @author 		Olivier Bossel <olivier.bossel@gmail.com>
+ */
+
 var SRippleComponent = function (_SWebComponent) {
 	_inherits(SRippleComponent, _SWebComponent);
 
@@ -46,6 +62,7 @@ var SRippleComponent = function (_SWebComponent) {
 		/**
    * Component will mount
    * @definition 		SWebComponent.componentWillMount
+   * @protected
    */
 		value: function componentWillMount() {
 			_get(SRippleComponent.prototype.__proto__ || Object.getPrototypeOf(SRippleComponent.prototype), 'componentWillMount', this).call(this);
@@ -55,6 +72,7 @@ var SRippleComponent = function (_SWebComponent) {
 		/**
    * Mount component
    * @definition 		SWebComponent.componentMount
+   * @protected
    */
 
 	}, {
@@ -71,6 +89,7 @@ var SRippleComponent = function (_SWebComponent) {
 		/**
    * Component unmount
    * @definition 		SWebComponent.componentUnmount
+   * @protected
    */
 
 	}, {
@@ -176,6 +195,7 @@ var SRippleComponent = function (_SWebComponent) {
 
 		/**
    * Should component update
+   * @protected
    */
 
 	}, {
@@ -189,6 +209,7 @@ var SRippleComponent = function (_SWebComponent) {
 
 		/**
    * Css
+   * @protected
    */
 		value: function defaultCss(componentName, componentNameDash) {
 			return '\n\t\t\t' + componentNameDash + ' {\n\t\t\t\tpointer-events : none;\n\t\t\t\tposition : absolute;\n\t\t\t\ttop : 0;\n\t\t\t\tleft : 0;\n\t\t\t\twidth : 100%;\n\t\t\t\theight : 100%;\n\t\t\t}\n\t\t\t.' + componentNameDash + '__particle {\n\t\t\t\ttop:50%; left:50%;\n\t\t\t\t-webkit-transform: translateX(-50%) translateY(-50%);\n\t\t\t\ttransform: translateX(-50%) translateY(-50%);\n\t\t\t\tposition:absolute;\n\t\t\t\twidth:150%;\n\t\t\t\tborder-radius: 50%;\n\t\t\t}\n\t\t\t.' + componentNameDash + '__particle:after {\n\t\t\t\tcontent:"";\n\t\t\t\tdisplay:block;\n\t\t\t\twidth:100%;\n\t\t\t\theight:0;\n\t\t\t\tpadding-top:100%;\n\t\t\t}\n\t\t';
@@ -200,6 +221,7 @@ var SRippleComponent = function (_SWebComponent) {
 		/**
    * Default props
    * @definition 		SWebComponent.defaultProps
+   * @protected
    */
 		get: function get() {
 			return {
