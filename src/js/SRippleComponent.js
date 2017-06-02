@@ -8,7 +8,6 @@ import __offset from 'coffeekraken-sugar/js/dom/offset'
  * @extends 	SWebComponent
  * Provide a nice and simple to use ripple webcomponent fully customizable
  *
- * @styleguide 		Objects / Ripples
  * @example 		html
  * <div style="height:500px; position:relative;">
  * 	<s-ripple></s-ripple>
