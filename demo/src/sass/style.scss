@@ -1,0 +1,24 @@
+@import 'node_modules/coffeekraken-sugar/index';
+@import 'node_modules/coffeekraken-s-typography-component/index';
+@import 'node_modules/coffeekraken-s-button-component/index';
+@import 'index';
+@include s-init();
+@include s-classes();
+@include s-typography-classes();
+@include s-button-classes();
+body {
+	padding: s-space(big);
+}
+.card {
+	background-color: white;
+	@include s-depth(5);
+	height: 30vh;
+	line-height: 30vh;
+	text-align: center;
+	user-select: none;
+	border: 5px solid white;
+	span {
+		pointer-events:none;
+	}
+}
+@include s-ripple-classes();
