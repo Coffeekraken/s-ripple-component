@@ -21,44 +21,43 @@ module.exports = {
 		html : {
 			language : 'html',
 			data : `
-				<div class="container">
-					<h1 class="h1 m-b-small">
-						Coffeekraken s-ripple-component
-					</h1>
-					<p class="p m-b-bigger">
-						Provide a nice and simple to use ripple webcomponent fully customizable
-					</p>
-					<div class="card m-b-big">
-						<span>Click here</span>
-						<s-ripple count="2"></s-ripple>
-					</div>
-					<a href="#" class="btn">
-						<s-ripple></s-ripple>
-						Click me!!!
-					</a>
-					<a href="#" class="btn btn--primary">
-						<s-ripple></s-ripple>
-						Click me!!!
-					</a>
-					<a href="#" class="btn btn--secondary">
-						<s-ripple></s-ripple>
-						Click me!!!
-					</a>
+				<h1 class="h3 m-b-small">
+					Coffeekraken s-ripple-component
+				</h1>
+				<p class="p m-b-bigger">
+					Provide a nice and simple to use ripple webcomponent fully customizable
+				</p>
+				<div class="card m-b-big">
+					<span>Click here</span>
+					<s-ripple count="2"></s-ripple>
 				</div>
+				<a href="#" class="btn">
+					<s-ripple></s-ripple>
+					Click me!!!
+				</a>
+				<a href="#" class="btn btn--primary">
+					<s-ripple></s-ripple>
+					Click me!!!
+				</a>
+				<a href="#" class="btn btn--secondary">
+					<s-ripple></s-ripple>
+					Click me!!!
+				</a>
 			`
 		},
 		css : {
 			language : 'sass',
 			data : `
 				@import 'node_modules/coffeekraken-sugar/index';
+				@import 'node_modules/coffeekraken-s-typography-component/index';
+				@import 'node_modules/coffeekraken-s-button-component/index';
 				@import 'index';
 				@include s-init();
 				@include s-classes();
 				@include s-typography-classes();
 				@include s-button-classes();
-				.container {
-					@include s-position(absolute, middle, center);
-					min-width:80vw;
+				body {
+					padding: s-space(big);
 				}
 				.card {
 					background-color: white;
