@@ -29,6 +29,8 @@
 
 Provide a nice and simple to use ripple webcomponent fully customizable
 
+[![View demo](http://components.coffeekraken.io/assets/img/view-demo.png)](http://components.coffeekraken.io/app/s-ripple-component)
+
 ## Table of content
 
 1. **[Demo](http://components.coffeekraken.io/app/s-ripple-component)**

@@ -77,7 +77,6 @@ module.exports = {
 		js : {
 			language : 'js',
 			data : `
-				import 'webcomponents.js/webcomponents-lite'
 				import SRippleComponent from './dist/index'
 			`
 		}
